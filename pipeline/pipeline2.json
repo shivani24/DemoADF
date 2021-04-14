@@ -3,20 +3,14 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Web1",
-				"type": "WebActivity",
+				"name": "WebHook1",
+				"type": "WebHook",
 				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
 				"userProperties": [],
 				"typeProperties": {
 					"url": "https://8d730564-b1d6-4a68-bf7b-c7915aafca90.webhook.eus.azure-automation.net/webhooks?token=wMLEZaJh669TSWREtqxB6ZTSQ8v0taXjrw%2b5ZEnwrfg%3d",
-					"method": "POST"
+					"method": "POST",
+					"timeout": "00:1:00"
 				}
 			}
 		],
